@@ -1,0 +1,25 @@
+﻿@model CL1LaboPeruSAC.Models.ClassCalcular
+@{
+    ViewBag.Title = "Disco Solido";
+    Layout = "~/Views/Shared/_LayoutMaster.cshtml";
+
+}
+<h1 style="text-align:center">Disco Solido</h1>
+<br />
+
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <form asp-controller="DiscoSolido" asp-action="CalcularCds">
+            <br />
+            <h2 style="text-align:center">Capacidad del Disco Duro en GB</h2>
+            <br />
+            <div style="text-align: center;">
+                <input asp-for="Disco" class="form-control small-input" style="text-align: center;" />
+            </div>
+            <br>
+            <div style="text-align: center;">
+                <input type="submit" value="Calcular" class="btn btn-warning" />
+            </div>
+        </form>
+    </div>
+</div>
